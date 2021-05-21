@@ -1,0 +1,66 @@
+
+
+
+
+body {
+   
+  background-color: rebeccapurple;
+    font-family:'Bubblegum Sans', sans-serif;
+}
+
+
+
+.container {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    perspective: 500px;
+}
+
+
+.text {
+    text-align: center;
+    font-size:100px;
+    font-weight: lighter;
+    letter-spacing: 10px;
+    color:pink;
+    transform-style:preserve-3d;
+    animation:anim 5s alternate infinite;
+
+}
+ @keyframes anim {
+     0% {
+         transform:rotateX(25deg) rotateY(-45deg);
+         text-shadow: 1px 1px 0 #b52b65,
+                      2px  2px 0 #b52b65,
+                      3px 3px 0  #b52b65,
+                      4px 4px 0  #b52b65,
+                      5px  5px 0   #b52b65,
+                      6px 6px 0  #b52b65,
+                      7px 7px 0 #b52b65,
+                      8px 8px 0 #b52b65,
+                      9px 9px 0 #b52b65,
+                      10px 10px 0 #b52b65;
+                      
+
+     }
+     100% {
+         transform:rotateX(25deg) rotateY(45deg);
+         text-shadow: -1px 1px 0 #b52b65,
+                      -2px  2px 0 #b52b65,
+                      -3px 3px 0  #b52b65,
+                      -4px 4px 0  #b52b65,
+                      -5px  5px 0   #b52b65,
+                      -6px 6px 0  #b52b65,
+                      -7px 7px 0 #b52b65,
+                      -8px  8px 0 #b52b65,
+                      9px 9px 0 #b52b65,
+                      10px 10px 0 #b52b65;
+     }
+ }
+   
+
+
+    
+
